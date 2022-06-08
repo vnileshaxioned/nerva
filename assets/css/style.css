@@ -381,6 +381,7 @@ footer .wrapper { padding-top: 24px; }
   .category-list:hover { background-color: var(--tag-color); }
   .tag-list a:hover { background-color: var(--tag-hover); }
   .icon:hover::before { color: var(--body-color); }
+  .post-list .paragraph:hover { color: var(--white-color); }
 }
 
 
