@@ -218,7 +218,10 @@ header .wrapper {
       flex-wrap: wrap;
 }
 
+.collection-active { display: block; }
+
 .show-collection {
+  display: none;
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   position: relative;
