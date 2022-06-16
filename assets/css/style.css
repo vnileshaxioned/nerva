@@ -313,7 +313,7 @@ li:nth-child(2) .action-button::before { content: '\f15b'; }
   width: 55%;
   opacity: 1;
   position: fixed;
-  top: 80%;
+  top: 75%;
   left: 50%;
   bottom: 55px;
   transform: translateX(-50%);
