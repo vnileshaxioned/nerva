@@ -2,22 +2,23 @@
 
 */
 var categories = document.querySelectorAll('.category-list');
-var selectedCategory = document.querySelectorAll('.show-collection');
+var selectedImage = document.querySelectorAll('.show-collection');
 
-selectedCategory.forEach(function (select) {
-  categories.forEach(function (category) {
-      if (select.dataset.category == category.dataset.category) {
-        category.addEventListener('click', function () {
-          select.classList.remove('collection-inactive')
-        })
-      } else if (category.dataset.category == 'all') {
-        category.addEventListener('click', function () {
-          select.classList.remove('collection-inactive')
-        })
-      } else {
-        category.addEventListener('click', function () {
-          select.classList.add('collection-inactive')
-        })
+for (var images of selectedImage) {
+  images.classList.add('collection-active');
+}
+
+categories.forEach(function (category) {
+  var clicked = category.dataset.category;
+    category.addEventListener('click', function () {
+      for (var images of selectedImage) {
+        if (clicked == 'all') {
+          images.classList.add('collection-active');
+        } else if (images.classList.contains(clicked)) {
+          images.classList.add('collection-active');
+        } else {
+          images.classList.remove('collection-active');
+        }
       }
-  })
-})
+    });
+});
