@@ -292,6 +292,41 @@ h2 {
 
 li:nth-child(1) .action-button::before { content: '\f002'; }
 li:nth-child(2) .action-button::before { content: '\f15b'; }
+
+.modal-active {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  background-color: #0000006b;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.modal-active figure {
+  width: 55%;
+  margin: 50px auto;
+}
+
+.modal-active .collection-content {
+  width: 55%;
+  opacity: 1;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: fixed;
+  background: var(--tag-color);
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  transition: all .3s ease;
+}
+
 /* gallery section ends here */
 /*=================================
   main styling ends here
