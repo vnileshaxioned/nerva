@@ -1,6 +1,4 @@
-/* Author: 
-
-*/
+// for category tab filter
 var categories = document.querySelectorAll('.category-list');
 var selectedImage = document.querySelectorAll('.show-collection');
 
@@ -22,3 +20,16 @@ categories.forEach(function (category) {
       }
     });
 });
+// category tab filter ends here
+
+// for modal
+selectedImage.forEach(function (image) {
+  image.addEventListener('click', function() {
+    var clicked = image.classList.add('modal-active');
+    var modalContent = document.querySelectorAll('.modal-active > .gallery-content');
+    for (var content of modalContent) {
+      content.classList.remove('gallery-content');
+    }
+  })
+});
+// modal ends here
