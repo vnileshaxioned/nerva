@@ -312,19 +312,11 @@ li:nth-child(2) .action-button::before { content: '\f15b'; }
 .modal-active .collection-content {
   width: 55%;
   opacity: 1;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  justify-content: center;
   position: fixed;
-  background: var(--tag-color);
-  bottom: 55px;
+  top: 80%;
   left: 50%;
+  bottom: 55px;
   transform: translateX(-50%);
-  text-align: center;
-  transition: all .3s ease;
 }
 
 /* gallery section ends here */
@@ -514,7 +506,7 @@ footer .wrapper { padding-top: 24px; }
   .post-list .paragraph:hover { color: var(--white-color); }
   .action-button:hover { color: var(--icon-color); }
 
-  .show-collection:hover .collection-content {
+  .show-collection:hover .gallery-content {
     width: 100%;
     opacity: 1;
   }
