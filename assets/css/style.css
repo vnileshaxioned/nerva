@@ -290,10 +290,10 @@ h2 {
   text-indent: 0;
 }
 
-li:nth-child(1) .action-button::before { content: '\f002'; }
-li:nth-child(2) .action-button::before { content: '\f15b'; }
+.action li:nth-child(1) .action-button::before { content: '\f002'; }
+.action li:nth-child(2) .action-button::before { content: '\f15b'; }
 
-.modal-active {
+/* .modal-active {
   position: fixed;
   width: 100%;
   top: 0;
@@ -306,7 +306,38 @@ li:nth-child(2) .action-button::before { content: '\f15b'; }
 
 .modal-active figure {
   width: 55%;
-  margin: 50px auto;
+  position: fixed;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal-active::before {
+  content: '\f00d';
+  font-family: 'FontAwesome';
+  float: right;
+  font-size: 30px;
+  position: fixed;
+  top: 60px;
+  right: 15%;
+  cursor: pointer;
+}
+
+.modal-active figure::before,
+.modal-active figure::after {
+  font-family: 'FontAwesome';
+  float: right;
+  font-size: 30px;
+  position: fixed;
+  cursor: pointer;
+}
+
+.modal-active figure::before {
+  content: '\f104';
+}
+
+.modal-active figure::after {
+  content: '\f105';
 }
 
 .modal-active .collection-content {
@@ -317,7 +348,8 @@ li:nth-child(2) .action-button::before { content: '\f15b'; }
   left: 50%;
   bottom: 55px;
   transform: translateX(-50%);
-}
+  transition: none;
+} */
 
 /* gallery section ends here */
 /*=================================
