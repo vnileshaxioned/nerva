@@ -320,6 +320,18 @@ h2 {
   padding: 10px 0;
   background-color: #0000003b;
 }
+
+.close {
+  position: fixed;
+  top: 6px;
+  right: 2%;
+}
+
+.close::before {
+  content: '\f2d3';
+  font-family: 'FontAwesome';
+  float: right;
+}
 /* gallery section ends here */
 /*=================================
   main styling ends here
