@@ -293,64 +293,33 @@ h2 {
 .action li:nth-child(1) .action-button::before { content: '\f002'; }
 .action li:nth-child(2) .action-button::before { content: '\f15b'; }
 
-/* .modal-active {
+.modal {
   position: fixed;
   width: 100%;
   top: 0;
-  left: 50%;
+  display: block;
+  left: 0;
   bottom: 0;
-  background-color: #0000006b;
-  transform: translateX(-50%);
+  background-color: #000000b3;
   z-index: 1;
 }
 
-.modal-active figure {
-  width: 55%;
-  position: fixed;
-  bottom: 55px;
+.modal .modal-active {
+  display: block;
+  width: 70%;
+  top: 75px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.modal-active::before {
-  content: '\f00d';
-  font-family: 'FontAwesome';
-  float: right;
-  font-size: 30px;
-  position: fixed;
-  top: 60px;
-  right: 15%;
-  cursor: pointer;
-}
-
-.modal-active figure::before,
-.modal-active figure::after {
-  font-family: 'FontAwesome';
-  float: right;
-  font-size: 30px;
-  position: fixed;
-  cursor: pointer;
-}
-
-.modal-active figure::before {
-  content: '\f104';
-}
-
-.modal-active figure::after {
-  content: '\f105';
-}
-
-.modal-active .collection-content {
-  width: 55%;
+.modal .collection-content {
+  display: block;
   opacity: 1;
-  position: fixed;
-  top: 75%;
-  left: 50%;
-  bottom: 55px;
-  transform: translateX(-50%);
-  transition: none;
-} */
-
+  top: auto;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #0000003b;
+}
 /* gallery section ends here */
 /*=================================
   main styling ends here
