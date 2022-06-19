@@ -325,13 +325,46 @@ h2 {
   position: fixed;
   top: 6px;
   right: 2%;
+  text-indent: -9999px;
 }
 
 .close::before {
   content: '\f2d3';
   font-family: 'FontAwesome';
   float: right;
+  text-indent: 0;
+  font-size: 26px;
 }
+
+.modal-action {
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-action li {
+  margin: 0 2%;
+}
+
+.modal-action a {
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-indent: -9999px;
+}
+
+.modal-action a::before {
+  font-family: 'FontAwesome';
+  float: right;
+  text-indent: 0;
+  font-size: 26px;
+}
+
+.prev::before { content: '\f104'; }
+.next::before { content: '\f105'; }
 /* gallery section ends here */
 /*=================================
   main styling ends here
@@ -529,6 +562,8 @@ footer .wrapper { padding-top: 24px; }
     bottom: 0;
     opacity: .5;
   }
+
+  .modal-action a:hover { background-color: #00000059; }
 }
 
 
