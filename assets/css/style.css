@@ -627,13 +627,16 @@ footer .wrapper { padding-top: 24px; }
     right: 0;
   }
 
-  .nav-menu:hover nav {
+  .container-active { position: fixed; }
+
+  .nav-active {
     width: 100%;
     display: block;
     position: fixed;
-    top: 0;
+    top: 95px;
     left: 0;
     background-color: #000;
+    z-index: 1;
   }
 
   .menu-list {
