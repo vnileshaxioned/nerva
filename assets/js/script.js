@@ -17,9 +17,14 @@ $(document).ready(function () {
   });
   // tab filter ends here
 
-  // for modal
-
-  // modal ends here
+  // for hamburger
+  var container = $('.container');
+  var navMenu = $('nav')
+  $('.hamburger').click(function () {
+    container.toggleClass('container-active');
+    navMenu.toggleClass('nav-active');
+  });
+  // hamburger ends here
 });
 
 // for category tab filter
