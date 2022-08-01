@@ -1,55 +1,55 @@
-$(document).ready(function () {
-  // for tab filter
-  $('.show-collection').addClass('collection-active');
-  $('.category-list').each(function () {
-    var data = $(this);
-    $(data).click(function () {
-      var clicked = $(data).data('category');
-      $('.show-collection').each(function () {
-        var img = $(this);
-        var images = $(img).data('name');
-        img.removeClass('collection-active');
-        if (clicked == images || clicked == 'all') {
-          img.addClass('collection-active');
-        }
-      });
-    });
-  });
-  // tab filter ends here
+// $(document).ready(function () {
+//   // for tab filter
+//   $('.show-collection').addClass('collection-active');
+//   $('.category-list').each(function () {
+//     var data = $(this);
+//     $(data).click(function () {
+//       var clicked = $(data).data('category');
+//       $('.show-collection').each(function () {
+//         var img = $(this);
+//         var images = $(img).data('name');
+//         img.removeClass('collection-active');
+//         if (clicked == images || clicked == 'all') {
+//           img.addClass('collection-active');
+//         }
+//       });
+//     });
+//   });
+//   // tab filter ends here
 
-  // for hamburger
-  $('.hamburger').click(function () {
-    $('.container').toggleClass('container-active');
-    $('nav').toggleClass('nav-active');
-  });
-  // hamburger ends here
-});
+//   // for hamburger
+//   $('.hamburger').click(function () {
+//     $('.container').toggleClass('container-active');
+//     $('nav').toggleClass('nav-active');
+//   });
+//   // hamburger ends here
+// });
 
 // for category tab filter
-// var categories = document.querySelectorAll('.category-list');
-// var selectedImage = document.querySelectorAll('.show-collection');
+var categories = document.querySelectorAll('.category-list');
+var selectedImage = document.querySelectorAll('.show-collection');
 
-// for (var images of selectedImage) {
-//   images.classList.add('collection-active');
-// }
+for (var images of selectedImage) {
+  images.classList.add('collection-active');
+}
 
-// for (i = 0; i < categories.length; i++) {
-//   categories[i].addEventListener('click', function () {
-//     for (j = 0; j < categories.length; j++) {
-//       categories[j].classList.remove('category-active');
-//     }
-//     this.classList.add('category-active');
+for (i = 0; i < categories.length; i++) {
+  categories[i].addEventListener('click', function () {
+    for (j = 0; j < categories.length; j++) {
+      categories[j].classList.remove('category-active');
+    }
+    this.classList.add('category-active');
 
-//     var dataCategory = this.getAttribute('data-category');
-//     for (var images of selectedImage) {
-//       images.classList.remove('collection-active');
-//       if (images.getAttribute('data-name') == dataCategory || dataCategory == 'all') {
-//         images.classList.add('collection-active');
-//       }
-//     }
-//   })
-// }
-// // category tab filter ends here
+    var dataCategory = this.getAttribute('data-category');
+    for (var images of selectedImage) {
+      images.classList.remove('collection-active');
+      if (images.getAttribute('data-name') == dataCategory || dataCategory == 'all') {
+        images.classList.add('collection-active');
+      }
+    }
+  })
+}
+// category tab filter ends here
 
 // // for modal
 // selectedImage.forEach(function (image) {
